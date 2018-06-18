@@ -1,9 +1,14 @@
-// include another .scss file from a sub-directory
-@import './about/about.scss';
+// Variables
+@import 'misc/variables';
 
-body {
-    a {
-        color: magenta;
-        background-color: #fff;
-    }
-}
+// Media Queries
+@import 'misc/mixins';
+
+// Mobiles Devices
+@import 'responsive/mobile';
+
+// Tablets
+
+// Laptops
+
+// Big-size screens

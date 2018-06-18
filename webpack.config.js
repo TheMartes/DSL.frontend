@@ -1,4 +1,5 @@
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
+var tailwindcss = require('tailwindcss');
 
 module.exports = {
   entry: ['./app.js', './scss/main.scss'],

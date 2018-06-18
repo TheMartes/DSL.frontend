@@ -5,10 +5,165 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>DSL.sk | Digitálny svet pod lupou</title>
+
+    <link rel="stylesheet" href="css/app.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+      crossorigin="anonymous">
 </head>
 <body>
-    
-    <!-- entry -->
 
+    <header>
+      <a href="#"><img src="/assets/logo-black.svg" class="logo" alt="logo"></a>
+      <div class="actions">
+        <div class="search">
+          <input type="text" placeholder="Nájdi čo hľadáš">
+          <i class="fas fa-search"></i>
+        </div>
+        <div class="profile">
+          <img src="https://avatars0.githubusercontent.com/u/16374732?s=460&v=4" alt="profilePicture" class="shadow">
+        </div>
+      </div>
+    </header>
+
+    <aside class="sidebar">
+      <ul class="list-reset">
+        <li><a href="#">Články</a></li>
+        <li><a href="#">Správy</a></li>
+        <li><a href="#">DSL</a></li>
+      </ul>
+    </aside>
+
+    <main>
+      <div class="post">
+        <div class="imgContainer">
+          <div class="promote">TOP Článok</div>
+          <img src="http://123gamesfree.com/wp-content/uploads/2018/02/cool-games-on-iphone.jpg" alt="postImage">
+        </div>
+        <h2>Predstavený Android 8, sľubuje vyššiu rýchlosť a lepšiu výdrž na batériu.</h2>
+        <span>
+          <div class="info">
+            22.3.2018 | 369 komentárov
+          </div>
+          <i class="fas fa-arrow-right text-green"></i>
+        </span>
+      </div>
+
+      <div class="post">
+        <div class="imgContainer">
+          <div class="promote">TOP Správa</div>
+          <img src="https://agirlandhermac.design/blank/wp-content/uploads/lego-keyboard.jpeg" alt="postImage">
+        </div>
+        <h2> USA majú nový najvýkonnejší polo-exaflopový superpočítač, porazili Čínu</h2>
+        <span>
+          <div class="info">
+            24.3.2018 | 169 komentárov
+          </div>
+          <i class="fas fa-arrow-right text-green"></i>
+        </span>
+      </div>
+
+      <div class="ad">
+        <img src="/assets/ad.png" alt="Ad">
+        <span>
+          <a href="#">Zbav sa reklám za SMS</a>
+          <span>inzercia</span>
+        </span>
+      </div>
+
+      <div class="post">
+        <div class="imgContainer">
+          <img src="/assets/article-img.png" alt="postImage">
+        </div>
+        <h2>Kolesám Curiosity na Marse sa začal odlupovať dezén.</h2>
+        <span>
+          <div class="info">
+            24.3.2018 | 23 komentárov
+          </div>
+          <i class="fas fa-arrow-right text-green"></i>
+        </span>
+      </div>
+
+      <div class="post">
+        <div class="imgContainer">
+          <img src="https://mk0resourcesinfm536w.kinstacdn.com/wp-content/uploads/password-cracking-02222013.jpg" alt="postImage">
+        </div>
+        <h2>SHA-1 kolízia má ďalšiu obeť, umožňuje falšovať torrenty.</h2>
+        <span>
+          <div class="info">
+            24.3.2018 | 500 komentárov
+          </div>
+          <i class="fas fa-arrow-right text-green"></i>
+        </span>
+      </div>
+    </main>
+
+    <section>
+      <h2>Pošleme ti nový článok na email</h2>
+      <div class="bar"></div>
+      <p>Žiadny spam, len horúce novinky.</p>
+
+      <form action="#">
+        <input type="text" placeholder="Napíš mail a stlač enter">
+        <button type="submit">OK <i class="fas fa-arrow-right text-green"></i></button>
+      </form>
+    </section>
+
+    <div class="ad">
+      <img src="/assets/ad.png" alt="Ad">
+      <span>
+        <a href="#">Zbav sa reklám za SMS</a>
+        <span>inzercia</span>
+      </span>
+    </div>
+
+    <div class="topStories">
+      <h2 class="text-center">Top Články týždňa</h2>
+      <div class="bar"></div>
+      <ul>
+        <li>
+          <a href="#">Slovensko.sk malo za 9 mesiacov 57 výpadkov. "Vyhrajte voľby," odporučil nám po kritike iného aspektu predstaviteľ NASES-u</a>
+          <span>1.3.2018 | 235 komentárov</span>
+        </li>
+        <li>
+          <a href="#">Programátor oscreenshotoval celý slovenský Internet, spravil z neho jednorožca</a>
+          <span>2.3.2018 | 56 komentárov</span>
+        </li>
+        <li>
+          <a href="#">Začína revolúcia v počítačových hrách, DirectX začína renderovať ray tracingom</a>
+          <span>3.3.2018 | 21 komentárov</span>
+        </li>
+        <li>
+          <a href="#">Štátna sľubotechna a nekompetentnosť, plne bezpečné certifikáty nečakajte. Reorganizácia IT nutná</a>
+          <span>4.3.2018 | 85 komentárov</span>
+        </li>
+        <li>
+          <a href="#">Úrad vicepremiéra pre informatizáciu chystá zmeny, bude stáť na troch nových pilieroch</a>
+          <span>5.3.2018 | 1735 komentárov</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="social">
+      <h2 class="text-center">Sledujte nás aj</h2>
+      <div class="bar"></div>
+      <ul>
+        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+        <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+      </ul>
+    </div>
+
+    <footer class="bg-grey-light">
+      <ul>
+        <li><a href="#">Redakcia</a></li>
+        <li><a href="#">Inzercia</a></li>
+        <li><a href="#">Píš pre nás</a></li>
+      </ul>
+
+      <p class="text-grey text-center pb-8">&copy; 2018 Andrej Cibík & Matej Bunček</p>
+    </footer>
+
+    <script src="app.js"></script>
 </body>
 </html>
